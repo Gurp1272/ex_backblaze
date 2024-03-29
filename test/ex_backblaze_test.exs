@@ -9,12 +9,12 @@ defmodule ExBackblazeTest do
     assert ExBackblaze.hello() == :world
   end
 
-  setup_all do
-    {:ok, application_key_id: "005e79a40da14a10000000001", application_key: "K005W+oZvVAIagPeUZy/wCLkq9j+OmY"}
-  end
+  # setup_all do
+  #   {:ok, application_key_id: "null", application_key: "null"}
+  # end
 
-  @integration
-  test "ExBackblaze.Tokens.authorize/2", state do
-    assert Tokens.authorize(state[:application_key_id], state[:application_key]) == {:ok, %Token{}}
-  end
+  # @integration
+  # test "ExBackblaze.Tokens.authorize/2", state do
+  #   assert Tokens.authorize(state[:application_key_id], state[:application_key]) == {:ok, %Token{}}
+  # end
 end
