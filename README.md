@@ -1,6 +1,6 @@
 # ExBackblaze
 
-Backblaze B2 Cloud API wrapper in Elixir
+Backblaze B2 Cloud Native API wrapper in Elixir
 
 ## Installation
 
