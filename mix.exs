@@ -10,7 +10,8 @@ defmodule ExBackblaze.MixProject do
       source_url: "https://github.com/Gurp1272/ex_backblaze",
       homepage_url: "https://github.com/Gurp1272/ex_backblaze",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      package: package()
     ]
   end
 
@@ -25,11 +26,16 @@ defmodule ExBackblaze.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      # {:dep_from_hexpm, "~> 0.3.0"},
-      # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
       {:finch, "~> 0.14"},
       {:jason, "~> 1.4"},
-      {:ex_doc, "~> 0.29.2"}
+      {:ex_doc, "~> 0.29.2", only: :dev, runtime: false}
+    ]
+  end
+
+  defp package() do
+    [
+      licenses: ["Apache-2.0"],
+      links: %{"GitHub" => "https://github.com/Gurp1272/ex_backblaze"}
     ]
   end
 end
