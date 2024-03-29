@@ -1,6 +1,6 @@
 # ExBackblaze
 
-**TODO: Add description**
+Backblaze B2 Cloud API wrapper in Elixir
 
 ## Installation
 
