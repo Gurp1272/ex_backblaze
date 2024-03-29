@@ -34,7 +34,7 @@ defmodule ExBackblaze.MixProject do
 
   defp package() do
     [
-      licenses: ["Apache-2.0"],
+      licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/Gurp1272/ex_backblaze"}
     ]
   end
